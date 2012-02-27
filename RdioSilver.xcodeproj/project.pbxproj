@@ -1,0 +1,276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA4012AC14F5D82B0026F9AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4012AB14F5D82B0026F9AC /* Cocoa.framework */; };
+		CA4012AE14F5D82B0026F9AC /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4012AD14F5D82B0026F9AC /* ScriptingBridge.framework */; };
+		CA4012B414F5D82B0026F9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA4012B214F5D82B0026F9AC /* InfoPlist.strings */; };
+		CA4012B714F5D82B0026F9AC /* RdioSilverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4012B614F5D82B0026F9AC /* RdioSilverAction.m */; };
+		CA4012BA14F5D82B0026F9AC /* RdioSilverSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4012B914F5D82B0026F9AC /* RdioSilverSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA4012A814F5D82B0026F9AC /* RdioSilver.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RdioSilver.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4012AB14F5D82B0026F9AC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CA4012AD14F5D82B0026F9AC /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		CA4012B114F5D82B0026F9AC /* RdioSilver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RdioSilver-Info.plist"; sourceTree = "<group>"; };
+		CA4012B314F5D82B0026F9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA4012B514F5D82B0026F9AC /* RdioSilverAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RdioSilverAction.h; sourceTree = "<group>"; };
+		CA4012B614F5D82B0026F9AC /* RdioSilverAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioSilverAction.m; sourceTree = "<group>"; };
+		CA4012B814F5D82B0026F9AC /* RdioSilverSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RdioSilverSource.h; sourceTree = "<group>"; };
+		CA4012B914F5D82B0026F9AC /* RdioSilverSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioSilverSource.m; sourceTree = "<group>"; };
+		CA4012C714F5D8A10026F9AC /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		CA4012C814F5D8A10026F9AC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		CA4012C914F5D8A10026F9AC /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		CA4012CA14F5D8A10026F9AC /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
+		CA4012CB14F5D8A10026F9AC /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
+		CA4012CC14F5D8A10026F9AC /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
+		CA4012CD14F5D8A10026F9AC /* Quicksilver.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
+		CA4012CE14F5D8A10026F9AC /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		CA4012DC14F604520026F9AC /* Rdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rdio.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA4012A414F5D82B0026F9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4012AC14F5D82B0026F9AC /* Cocoa.framework in Frameworks */,
+				CA4012AE14F5D82B0026F9AC /* ScriptingBridge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA40129C14F5D82B0026F9AC = {
+			isa = PBXGroup;
+			children = (
+				CA4012C614F5D8A10026F9AC /* Configuration */,
+				CA4012AF14F5D82B0026F9AC /* RdioSilver */,
+				CA4012AA14F5D82B0026F9AC /* Frameworks */,
+				CA4012A914F5D82B0026F9AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA4012A914F5D82B0026F9AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA4012A814F5D82B0026F9AC /* RdioSilver.qsplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA4012AA14F5D82B0026F9AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA4012AB14F5D82B0026F9AC /* Cocoa.framework */,
+				CA4012AD14F5D82B0026F9AC /* ScriptingBridge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA4012AF14F5D82B0026F9AC /* RdioSilver */ = {
+			isa = PBXGroup;
+			children = (
+				CA4012DC14F604520026F9AC /* Rdio.h */,
+				CA4012B514F5D82B0026F9AC /* RdioSilverAction.h */,
+				CA4012B614F5D82B0026F9AC /* RdioSilverAction.m */,
+				CA4012B814F5D82B0026F9AC /* RdioSilverSource.h */,
+				CA4012B914F5D82B0026F9AC /* RdioSilverSource.m */,
+				CA4012B014F5D82B0026F9AC /* Supporting Files */,
+			);
+			path = RdioSilver;
+			sourceTree = "<group>";
+		};
+		CA4012B014F5D82B0026F9AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA4012B114F5D82B0026F9AC /* RdioSilver-Info.plist */,
+				CA4012B214F5D82B0026F9AC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA4012C614F5D8A10026F9AC /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CA4012C714F5D8A10026F9AC /* Common.xcconfig */,
+				CA4012C814F5D8A10026F9AC /* Debug.xcconfig */,
+				CA4012C914F5D8A10026F9AC /* Developer.xcconfig */,
+				CA4012CA14F5D8A10026F9AC /* QSPlugIn.xcconfig */,
+				CA4012CB14F5D8A10026F9AC /* QSPlugIn_Debug.xcconfig */,
+				CA4012CC14F5D8A10026F9AC /* QSPlugIn_Release.xcconfig */,
+				CA4012CD14F5D8A10026F9AC /* Quicksilver.pch */,
+				CA4012CE14F5D8A10026F9AC /* Release.xcconfig */,
+			);
+			name = Configuration;
+			path = /Users/tonyc/Code/RdioSilver/../../../../private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA4012A714F5D82B0026F9AC /* RdioSilver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4012BE14F5D82B0026F9AC /* Build configuration list for PBXNativeTarget "RdioSilver" */;
+			buildPhases = (
+				CA4012A314F5D82B0026F9AC /* Sources */,
+				CA4012A414F5D82B0026F9AC /* Frameworks */,
+				CA4012A514F5D82B0026F9AC /* Resources */,
+				CA4012A614F5D82B0026F9AC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RdioSilver;
+			productName = RdioSilver;
+			productReference = CA4012A814F5D82B0026F9AC /* RdioSilver.qsplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA40129E14F5D82B0026F9AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = CA4012A114F5D82B0026F9AC /* Build configuration list for PBXProject "RdioSilver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA40129C14F5D82B0026F9AC;
+			productRefGroup = CA4012A914F5D82B0026F9AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA4012A714F5D82B0026F9AC /* RdioSilver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA4012A514F5D82B0026F9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4012B414F5D82B0026F9AC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA4012A614F5D82B0026F9AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/RdioSilver/bltrversion $INFOPLIST_FILE";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA4012A314F5D82B0026F9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4012B714F5D82B0026F9AC /* RdioSilverAction.m in Sources */,
+				CA4012BA14F5D82B0026F9AC /* RdioSilverSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA4012B214F5D82B0026F9AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA4012B314F5D82B0026F9AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA4012BC14F5D82B0026F9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA4012C814F5D8A10026F9AC /* Debug.xcconfig */;
+			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+			};
+			name = Debug;
+		};
+		CA4012BD14F5D82B0026F9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA4012CE14F5D8A10026F9AC /* Release.xcconfig */;
+			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+			};
+			name = Release;
+		};
+		CA4012BF14F5D82B0026F9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA4012CB14F5D8A10026F9AC /* QSPlugIn_Debug.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "RdioSilver/RdioSilver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qsplugin;
+			};
+			name = Debug;
+		};
+		CA4012C014F5D82B0026F9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA4012CC14F5D8A10026F9AC /* QSPlugIn_Release.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "RdioSilver/RdioSilver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qsplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA4012A114F5D82B0026F9AC /* Build configuration list for PBXProject "RdioSilver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4012BC14F5D82B0026F9AC /* Debug */,
+				CA4012BD14F5D82B0026F9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4012BE14F5D82B0026F9AC /* Build configuration list for PBXNativeTarget "RdioSilver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4012BF14F5D82B0026F9AC /* Debug */,
+				CA4012C014F5D82B0026F9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA40129E14F5D82B0026F9AC /* Project object */;
+}
