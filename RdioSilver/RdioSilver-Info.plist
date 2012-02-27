@@ -361,6 +361,36 @@
 	<array>
 		<dict>
 			<key>ID</key>
+			<string>RdioSilverNextTrackTrigger</string>
+			<key>command</key>
+			<string>RdioSilverNextTrackCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Next Track</string>
+			<key>set</key>
+			<string>RdioSilver</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>RdioSilverPreviousTrackTrigger</string>
+			<key>command</key>
+			<string>RdioSilverPreviousTrackCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>name</key>
+			<string>Previous Track</string>
+			<key>set</key>
+			<string>RdioSilver</string>
+		</dict>
+		<dict>
+			<key>ID</key>
 			<string>RdioSilverDecreaseVolumeTrigger</string>
 			<key>command</key>
 			<string>RdioSilverDecreaseVolumeCommand</string>
