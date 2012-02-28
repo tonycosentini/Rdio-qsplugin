@@ -32,13 +32,11 @@
 
 -(void)playPause
 {
-    NSLog(@"PLAY!");
     [self.rdio playpause];
 }
 
 - (void)decreaseVolume
 {
-    NSLog(@"Decreasing volume.");
     NSInteger newVolume = self.rdio.soundVolume - 10;
     if (newVolume < 0)
         newVolume = 0;
@@ -47,7 +45,6 @@
 
 -(void)increaseVolume
 {
-    NSLog(@"Increasing volume.");
     NSInteger newVolume = rdio.soundVolume + 10;
     if (newVolume > 100)
         newVolume = 100;
@@ -56,12 +53,9 @@
 
 -(void)previousTrack
 {
-    NSLog(@"Position: %f", self.rdio.playerPosition);
-    
     // Previous track just goes to the begining if the current track is pase ~2 seconds, hence why
     // it is called twice sometimes.    
     if (self.rdio.playerPosition >= 3) {
-        NSLog(@"Calling twice.");
         [self.rdio previousTrack];
     }
 
@@ -81,15 +75,28 @@
 
 - (NSArray *) objectsForEntry:(NSDictionary *)theEntry
 {
-	NSMutableArray *objects=[NSMutableArray arrayWithCapacity:1];
-	QSObject *newObject;
-	
-	newObject=[QSObject objectWithName:@"TestObject"];
-	[newObject setObject:@"" forType:RdioSilverType];
-	[newObject setPrimaryType:RdioSilverType];
-	[objects addObject:newObject];
-	
-	return objects;
+	NSMutableArray *controlObjects = [NSMutableArray arrayWithCapacity:1];
+	QSCommand *command;
+	NSDictionary *commandDict;
+	QSAction *newObject;
+	NSString *actionID;
+	NSDictionary *actionDict;
+	// create catalog objects using info specified in the plist (under QSCommands)
+	NSArray *controls = [NSArray arrayWithObjects:@"RdioSilverPlayPauseCommand", @"RdioSilverPreviousTrackCommand", @"RdioSilverNextTrackCommand", @"RdioSilverDecreaseVolumeCommand", @"RdioSilverIncreaseVolumeCommand", nil];
+    
+	for (NSString *control in controls) {
+		command = [QSCommand commandWithIdentifier:control];
+		if (command) {
+			commandDict = (NSDictionary *)[command commandDict];
+			actionID = [commandDict objectForKey:@"directID"];
+			actionDict = [[[commandDict objectForKey:@"directArchive"] objectForKey:@"data"] objectForKey:QSActionType];
+			if (actionDict) {
+				newObject = [QSAction actionWithDictionary:actionDict identifier:actionID bundle:nil];
+				[controlObjects addObject:newObject];
+			}
+		}
+	}
+	return controlObjects;
 }
 
 // Object Handler Methods

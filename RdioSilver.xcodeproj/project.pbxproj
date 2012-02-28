@@ -216,6 +216,7 @@
 			buildSettings = {
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -224,6 +225,7 @@
 			baseConfigurationReference = CA4012CE14F5D8A10026F9AC /* Release.xcconfig */;
 			buildSettings = {
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>Rdio</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleSignature</key>
@@ -42,7 +42,7 @@
 		<key>icon</key>
 		<string>KEXT</string>
 	</dict>
-	<key>QSPresetAdditionsTemplate</key>
+	<key>QSPresetAdditions</key>
 	<array>
 		<dict>
 			<key>ID</key>
@@ -51,9 +51,9 @@
 			<array>
 				<dict>
 					<key>ID</key>
-					<string>QSPresetRdioSilverExample</string>
+					<string>QSPresetRdioSilverControls</string>
 					<key>name</key>
-					<string>Items from RdioSilver</string>
+					<string>Rdio Controls</string>
 					<key>source</key>
 					<string>RdioSilverSource</string>
 				</dict>
@@ -61,7 +61,7 @@
 			<key>icon</key>
 			<string>KEXT</string>
 			<key>name</key>
-			<string>RdioSilver Presets</string>
+			<string>Rdio</string>
 			<key>source</key>
 			<string>QSGroupObjectSource</string>
 		</dict>
@@ -263,7 +263,7 @@
 								<key>icon</key>
 								<string>defaultAction</string>
 								<key>name</key>
-								<string>Rdio Play/Pause</string>
+								<string>Play/Pause</string>
 							</dict>
 						</dict>
 					</dict>
