@@ -19,15 +19,11 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>5</string>
 	<key>QSActions</key>
 	<dict/>
 	<key>QSPlugIn</key>
 	<dict>
-		<key>requiresBundles</key>
-		<array/>
-		<key>com.rdio.desktop</key>
-		<string></string>
 		<key>author</key>
 		<string>Tony Cosentini</string>
 		<key>categories</key>
@@ -35,12 +31,16 @@
 			<string>Music</string>
 			<string>Applications</string>
 		</array>
+		<key>com.rdio.desktop</key>
+		<string></string>
 		<key>description</key>
 		<string>Control Rdio.app via QuickSilver.</string>
 		<key>extendedDescription</key>
 		<string>Coming soon.</string>
 		<key>icon</key>
 		<string>KEXT</string>
+		<key>requiresBundles</key>
+		<array/>
 	</dict>
 	<key>QSPresetAdditions</key>
 	<array>
@@ -77,23 +77,14 @@
 		<dict>
 			<key>com.rdio.desktop</key>
 			<dict>
-				<key>RdioSilverPreviousTrackCommand</key>
+				<key>RdioSilverDecreaseVolumeCommand</key>
 				<dict>
 					<key>actionClass</key>
 					<string>QSCommandObjectHandler</string>
 					<key>command</key>
-					<string>RdioSilverPreviousTrackCommand</string>
+					<string>RdioSilverDecreaseVolumeCommand</string>
 					<key>name</key>
-					<string>Previous Track</string>
-				</dict>
-				<key>RdioSilverNextTrackCommand</key>
-				<dict>
-					<key>actionClass</key>
-					<string>QSCommandObjectHandler</string>
-					<key>command</key>
-					<string>RdioSilverNextTrackCommand</string>
-					<key>name</key>
-					<string>Next Track</string>
+					<string>Decrease Volume</string>
 				</dict>
 				<key>RdioSilverIncreaseVolumeCommand</key>
 				<dict>
@@ -104,6 +95,15 @@
 					<key>name</key>
 					<string>Increase Volume</string>
 				</dict>
+				<key>RdioSilverNextTrackCommand</key>
+				<dict>
+					<key>actionClass</key>
+					<string>QSCommandObjectHandler</string>
+					<key>command</key>
+					<string>RdioSilverNextTrackCommand</string>
+					<key>name</key>
+					<string>Next Track</string>
+				</dict>
 				<key>RdioSilverPlayPauseCommand</key>
 				<dict>
 					<key>actionClass</key>
@@ -113,14 +113,14 @@
 					<key>name</key>
 					<string>Play/Pause</string>
 				</dict>
-				<key>RdioSilverDecreaseVolumeCommand</key>
+				<key>RdioSilverPreviousTrackCommand</key>
 				<dict>
 					<key>actionClass</key>
 					<string>QSCommandObjectHandler</string>
 					<key>command</key>
-					<string>RdioSilverDecreaseVolumeCommand</string>
+					<string>RdioSilverPreviousTrackCommand</string>
 					<key>name</key>
-					<string>Decrease Volume</string>
+					<string>Previous Track</string>
 				</dict>
 			</dict>
 		</dict>
@@ -136,60 +136,6 @@
 		</dict>
 		<key>QSCommands</key>
 		<dict>
-			<key>RdioSilverNextTrackCommand</key>
-			<dict>
-				<key>command</key>
-				<dict>
-					<key>actionID</key>
-					<string>QSObjCSendMessageAction</string>
-					<key>directArchive</key>
-					<dict>
-						<key>data</key>
-						<dict>
-							<key>qs.action</key>
-							<dict>
-								<key>actionClass</key>
-								<string>RdioSilverSource</string>
-								<key>actionSelector</key>
-								<string>nextTrack</string>
-								<key>icon</key>
-								<string>defaultAction</string>
-								<key>name</key>
-								<string>Next Track</string>
-							</dict>
-						</dict>
-					</dict>
-					<key>directID</key>
-					<string>RdioSilverInternalCommand</string>
-				</dict>
-			</dict>
-			<key>RdioSilverPreviousTrackCommand</key>
-			<dict>
-				<key>command</key>
-				<dict>
-					<key>actionID</key>
-					<string>QSObjCSendMessageAction</string>
-					<key>directArchive</key>
-					<dict>
-						<key>data</key>
-						<dict>
-							<key>qs.action</key>
-							<dict>
-								<key>actionClass</key>
-								<string>RdioSilverSource</string>
-								<key>actionSelector</key>
-								<string>previousTrack</string>
-								<key>icon</key>
-								<string>defaultAction</string>
-								<key>name</key>
-								<string>Previous Track</string>
-							</dict>
-						</dict>
-					</dict>
-					<key>directID</key>
-					<string>RdioSilverInternalCommand</string>
-				</dict>
-			</dict>
 			<key>RdioSilverDecreaseVolumeCommand</key>
 			<dict>
 				<key>command</key>
@@ -244,6 +190,33 @@
 					<string>RdioSilverInternalCommand</string>
 				</dict>
 			</dict>
+			<key>RdioSilverNextTrackCommand</key>
+			<dict>
+				<key>command</key>
+				<dict>
+					<key>actionID</key>
+					<string>QSObjCSendMessageAction</string>
+					<key>directArchive</key>
+					<dict>
+						<key>data</key>
+						<dict>
+							<key>qs.action</key>
+							<dict>
+								<key>actionClass</key>
+								<string>RdioSilverSource</string>
+								<key>actionSelector</key>
+								<string>nextTrack</string>
+								<key>icon</key>
+								<string>defaultAction</string>
+								<key>name</key>
+								<string>Next Track</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>directID</key>
+					<string>RdioSilverInternalCommand</string>
+				</dict>
+			</dict>
 			<key>RdioSilverPlayPauseCommand</key>
 			<dict>
 				<key>command</key>
@@ -269,6 +242,33 @@
 					</dict>
 					<key>directID</key>
 					<string>RdioSilverPlayPause</string>
+				</dict>
+			</dict>
+			<key>RdioSilverPreviousTrackCommand</key>
+			<dict>
+				<key>command</key>
+				<dict>
+					<key>actionID</key>
+					<string>QSObjCSendMessageAction</string>
+					<key>directArchive</key>
+					<dict>
+						<key>data</key>
+						<dict>
+							<key>qs.action</key>
+							<dict>
+								<key>actionClass</key>
+								<string>RdioSilverSource</string>
+								<key>actionSelector</key>
+								<string>previousTrack</string>
+								<key>icon</key>
+								<string>defaultAction</string>
+								<key>name</key>
+								<string>Previous Track</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>directID</key>
+					<string>RdioSilverInternalCommand</string>
 				</dict>
 			</dict>
 		</dict>
