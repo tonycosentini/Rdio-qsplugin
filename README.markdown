@@ -1,11 +1,13 @@
 # RdioSilver - Quicksilver Plug-in for Rdio
 Heads up, this is extremely alpha. I've never written a Quicksilver plug-in before, and I've only tested this on my own machine.
 
-## Commands
+If you want to give it a try, feel free to download the [binary](https://github.com/tonycosentini/RdioSilver-qsplugin/downloads). It should be compatible is OS X 10.6+.
+
+## Rdio Application Commands
 All of these are also available as triggers as well.
 
-1. Play/Pause
-2. Previous Track
-3. Next Track
-4. Decrease Volume
-5. Increase Volume
+* Play/Pause
+* Previous Track
+* Next Track
+* Decrease Volume
+* Increase Volume
