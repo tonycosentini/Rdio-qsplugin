@@ -55,6 +55,14 @@
 					<key>name</key>
 					<string>Rdio Controls</string>
 					<key>source</key>
+					<string>RdioControlSource</string>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<string>QSPresetRdioSilverControls</string>
+					<key>name</key>
+					<string>Rdio Library</string>
+					<key>source</key>
 					<string>RdioSilverSource</string>
 				</dict>
 			</array>
@@ -279,6 +287,8 @@
 		</dict>
 		<key>QSObjectSources</key>
 		<dict>
+			<key>RdioControlSource</key>
+			<string>RdioControlSource</string>
 			<key>RdioSilverSource</key>
 			<string>RdioSilverSource</string>
 		</dict>

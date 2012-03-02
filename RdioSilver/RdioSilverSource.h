@@ -8,10 +8,12 @@
 #define RdioSilverType @"RdioSilverType"
 
 @class RdioApplication;
+@class RdioDatabase;
 
 @interface RdioSilverSource : QSObjectSource
 {
     RdioApplication *rdio;
+    RdioDatabase *collection;
 }
 
 - (id)init;
@@ -22,6 +24,14 @@
 -(void)previousTrack;
 -(void)nextTrack;
 
-@property (nonatomic, strong) RdioApplication *rdio; 
+-(NSArray *)browseMasters;
 
+@property (nonatomic, strong) RdioApplication *rdio; 
+@property (nonatomic, strong) RdioDatabase *collection;
+
+@end
+
+@interface RdioControlSource : QSObjectSource {
+    
+}
 @end

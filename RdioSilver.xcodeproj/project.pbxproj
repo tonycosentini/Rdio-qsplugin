@@ -12,6 +12,18 @@
 		CA4012B414F5D82B0026F9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA4012B214F5D82B0026F9AC /* InfoPlist.strings */; };
 		CA4012B714F5D82B0026F9AC /* RdioSilverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4012B614F5D82B0026F9AC /* RdioSilverAction.m */; };
 		CA4012BA14F5D82B0026F9AC /* RdioSilverSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4012B914F5D82B0026F9AC /* RdioSilverSource.m */; };
+		CAB29D5114FD71630075EF32 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB29D3D14FD71630075EF32 /* AFHTTPClient.m */; };
+		CAB29D5214FD71630075EF32 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB29D3F14FD71630075EF32 /* AFHTTPRequestOperation.m */; };
+		CAB29D5314FD71630075EF32 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB29D4114FD71630075EF32 /* AFImageRequestOperation.m */; };
+		CAB29D5414FD71630075EF32 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB29D4314FD71630075EF32 /* AFJSONRequestOperation.m */; };
+		CAB29D5514FD71630075EF32 /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB29D4514FD71630075EF32 /* AFJSONUtilities.m */; };
+		CAB29D5614FD71630075EF32 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB29D4714FD71630075EF32 /* AFNetworkActivityIndicatorManager.m */; };
+		CAB29D5714FD71630075EF32 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB29D4A14FD71630075EF32 /* AFPropertyListRequestOperation.m */; };
+		CAB29D5814FD71630075EF32 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB29D4C14FD71630075EF32 /* AFURLConnectionOperation.m */; };
+		CAB29D5914FD71630075EF32 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB29D4E14FD71630075EF32 /* AFXMLRequestOperation.m */; };
+		CAB29D5A14FD71630075EF32 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB29D5014FD71630075EF32 /* UIImageView+AFNetworking.m */; };
+		CAD712BF1501151A00EB61A9 /* RdioDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD712BE1501151A00EB61A9 /* RdioDatabase.m */; };
+		CAD712C7150128C900EB61A9 /* RdioAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD712C6150128C900EB61A9 /* RdioAPIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +45,31 @@
 		CA4012CD14F5D8A10026F9AC /* Quicksilver.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
 		CA4012CE14F5D8A10026F9AC /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		CA4012DC14F604520026F9AC /* Rdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rdio.h; sourceTree = "<group>"; };
+		CAB29D3C14FD71630075EF32 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		CAB29D3D14FD71630075EF32 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		CAB29D3E14FD71630075EF32 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		CAB29D3F14FD71630075EF32 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		CAB29D4014FD71630075EF32 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		CAB29D4114FD71630075EF32 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		CAB29D4214FD71630075EF32 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		CAB29D4314FD71630075EF32 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		CAB29D4414FD71630075EF32 /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
+		CAB29D4514FD71630075EF32 /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONUtilities.m; sourceTree = "<group>"; };
+		CAB29D4614FD71630075EF32 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		CAB29D4714FD71630075EF32 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		CAB29D4814FD71630075EF32 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CAB29D4914FD71630075EF32 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		CAB29D4A14FD71630075EF32 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		CAB29D4B14FD71630075EF32 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		CAB29D4C14FD71630075EF32 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		CAB29D4D14FD71630075EF32 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		CAB29D4E14FD71630075EF32 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		CAB29D4F14FD71630075EF32 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		CAB29D5014FD71630075EF32 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		CAD712BD1501151A00EB61A9 /* RdioDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdioDatabase.h; sourceTree = "<group>"; };
+		CAD712BE1501151A00EB61A9 /* RdioDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdioDatabase.m; sourceTree = "<group>"; };
+		CAD712C5150128C900EB61A9 /* RdioAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdioAPIClient.h; sourceTree = "<group>"; };
+		CAD712C6150128C900EB61A9 /* RdioAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdioAPIClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +88,7 @@
 		CA40129C14F5D82B0026F9AC = {
 			isa = PBXGroup;
 			children = (
+				CAB29D3914FD71520075EF32 /* Third Party */,
 				CA4012C614F5D8A10026F9AC /* Configuration */,
 				CA4012AF14F5D82B0026F9AC /* RdioSilver */,
 				CA4012AA14F5D82B0026F9AC /* Frameworks */,
@@ -78,11 +116,14 @@
 		CA4012AF14F5D82B0026F9AC /* RdioSilver */ = {
 			isa = PBXGroup;
 			children = (
+				CAD712C4150128B800EB61A9 /* Rdio API */,
 				CA4012DC14F604520026F9AC /* Rdio.h */,
 				CA4012B514F5D82B0026F9AC /* RdioSilverAction.h */,
 				CA4012B614F5D82B0026F9AC /* RdioSilverAction.m */,
 				CA4012B814F5D82B0026F9AC /* RdioSilverSource.h */,
 				CA4012B914F5D82B0026F9AC /* RdioSilverSource.m */,
+				CAD712BD1501151A00EB61A9 /* RdioDatabase.h */,
+				CAD712BE1501151A00EB61A9 /* RdioDatabase.m */,
 				CA4012B014F5D82B0026F9AC /* Supporting Files */,
 			);
 			path = RdioSilver;
@@ -112,6 +153,52 @@
 			name = Configuration;
 			path = /Users/tonyc/Code/RdioSilver/../../../../private/tmp/QS/Configuration;
 			sourceTree = "<absolute>";
+		};
+		CAB29D3914FD71520075EF32 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				CAB29D3B14FD71630075EF32 /* AFNetworking */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		CAB29D3B14FD71630075EF32 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CAB29D3C14FD71630075EF32 /* AFHTTPClient.h */,
+				CAB29D3D14FD71630075EF32 /* AFHTTPClient.m */,
+				CAB29D3E14FD71630075EF32 /* AFHTTPRequestOperation.h */,
+				CAB29D3F14FD71630075EF32 /* AFHTTPRequestOperation.m */,
+				CAB29D4014FD71630075EF32 /* AFImageRequestOperation.h */,
+				CAB29D4114FD71630075EF32 /* AFImageRequestOperation.m */,
+				CAB29D4214FD71630075EF32 /* AFJSONRequestOperation.h */,
+				CAB29D4314FD71630075EF32 /* AFJSONRequestOperation.m */,
+				CAB29D4414FD71630075EF32 /* AFJSONUtilities.h */,
+				CAB29D4514FD71630075EF32 /* AFJSONUtilities.m */,
+				CAB29D4614FD71630075EF32 /* AFNetworkActivityIndicatorManager.h */,
+				CAB29D4714FD71630075EF32 /* AFNetworkActivityIndicatorManager.m */,
+				CAB29D4814FD71630075EF32 /* AFNetworking.h */,
+				CAB29D4914FD71630075EF32 /* AFPropertyListRequestOperation.h */,
+				CAB29D4A14FD71630075EF32 /* AFPropertyListRequestOperation.m */,
+				CAB29D4B14FD71630075EF32 /* AFURLConnectionOperation.h */,
+				CAB29D4C14FD71630075EF32 /* AFURLConnectionOperation.m */,
+				CAB29D4D14FD71630075EF32 /* AFXMLRequestOperation.h */,
+				CAB29D4E14FD71630075EF32 /* AFXMLRequestOperation.m */,
+				CAB29D4F14FD71630075EF32 /* UIImageView+AFNetworking.h */,
+				CAB29D5014FD71630075EF32 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			path = RdioSilver/ThirdParty/AFNetworking;
+			sourceTree = "<group>";
+		};
+		CAD712C4150128B800EB61A9 /* Rdio API */ = {
+			isa = PBXGroup;
+			children = (
+				CAD712C5150128C900EB61A9 /* RdioAPIClient.h */,
+				CAD712C6150128C900EB61A9 /* RdioAPIClient.m */,
+			);
+			name = "Rdio API";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -193,6 +280,18 @@
 			files = (
 				CA4012B714F5D82B0026F9AC /* RdioSilverAction.m in Sources */,
 				CA4012BA14F5D82B0026F9AC /* RdioSilverSource.m in Sources */,
+				CAB29D5114FD71630075EF32 /* AFHTTPClient.m in Sources */,
+				CAB29D5214FD71630075EF32 /* AFHTTPRequestOperation.m in Sources */,
+				CAB29D5314FD71630075EF32 /* AFImageRequestOperation.m in Sources */,
+				CAB29D5414FD71630075EF32 /* AFJSONRequestOperation.m in Sources */,
+				CAB29D5514FD71630075EF32 /* AFJSONUtilities.m in Sources */,
+				CAB29D5614FD71630075EF32 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				CAB29D5714FD71630075EF32 /* AFPropertyListRequestOperation.m in Sources */,
+				CAB29D5814FD71630075EF32 /* AFURLConnectionOperation.m in Sources */,
+				CAB29D5914FD71630075EF32 /* AFXMLRequestOperation.m in Sources */,
+				CAB29D5A14FD71630075EF32 /* UIImageView+AFNetworking.m in Sources */,
+				CAD712BF1501151A00EB61A9 /* RdioDatabase.m in Sources */,
+				CAD712C7150128C900EB61A9 /* RdioAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +315,7 @@
 			buildSettings = {
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -225,6 +325,7 @@
 			baseConfigurationReference = CA4012CE14F5D8A10026F9AC /* Release.xcconfig */;
 			buildSettings = {
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
